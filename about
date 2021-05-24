@@ -16,4 +16,6 @@ fi
 
 source $ABOUT_ROOT_DIR/bin/activate
 
+pwd
+
 $ABOUT_ROOT_DIR/bin/about "$@"
