@@ -3,6 +3,9 @@
 # Copyright (c) 2015 nexB Inc. http://www.nexb.com/ - All rights reserved.
 #
 
+# Store orig directory
+CURR_DIR="$(pwd)"
+
 # cd to the root directory
 ABOUT_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$ABOUT_ROOT_DIR"
@@ -16,6 +19,6 @@ fi
 
 source $ABOUT_ROOT_DIR/bin/activate
 
-pwd
+cd "${CURR_DIR}"
 
 $ABOUT_ROOT_DIR/bin/about "$@"
